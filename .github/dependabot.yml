@@ -1,4 +1,7 @@
-package-ecosystem: "npm"
-directory: "/"
-schedule:
-interval: "daily"
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/" # O código está na raiz do projeto
+    schedule:
+      interval: "daily" # Verifica atualizações todos os dias
+    open-pull-requests-limit: 10 # Limite de PRs abertos simultaneamente (opcional)
